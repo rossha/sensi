@@ -1,0 +1,10 @@
+{
+  "name": "sensi_app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "*",
+    "http-proxy": "^0.8.7",
+    "request": "^2.49.0"
+  }
+}
