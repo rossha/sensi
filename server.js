@@ -6,10 +6,6 @@ app.get('/', function(req, res) {
 	res.sendfile('./index.html');
 });
 
-app.post('/temperature', function(req, res) {
-	res.sendfile('./index.html');
-});
-
 // local copy of most recent updates from the thermostat
 
 

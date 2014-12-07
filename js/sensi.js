@@ -120,3 +120,10 @@ Sensi.JsonRequest = function(method, url, payload) {
 Sensi.log = function(data) {
 	window.console && window.console.log(data);
 };
+
+Sensi.logRecentUpdate = (function() {
+	Sensi.GetThermostatList().done(function (data) {
+		var updates = data.OperationalStatus.Temperature.F;
+		window.console && window.console.log(updates)
+	});
+})();
